@@ -4,7 +4,7 @@
 // 3. Using const ( Read Only )
 
 // There are some rules to declare variable names
-// 1. Do not existing JS keywords
+// 1. Do not use existing JS keywords
 // 2. You cannot use any special character while naming a variable other then _ and $
 
 var variableName = "Welcome to Variables";
