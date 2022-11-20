@@ -12,6 +12,7 @@ const doubleQuote = "Hello";
 
 const userName = "Shubham";
 // We can use backTick for extended functionality such as dynamically changing it when required.
+// ${} this is called a temperate literal
 const backTick = `Hello, ${userName}`;
 
 console.log(backTick);
