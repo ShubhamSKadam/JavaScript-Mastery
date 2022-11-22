@@ -1,9 +1,6 @@
-let addString = "con" + "ca" + "te" + "nate";
+let n = 20;
 
-console.log(addString);
-
-// ${} this is called a temperate literal
-
-let str = `My favorite number ${37-10}`;
-
-console.log(str);
+for (let i = 0; i < n; i++) {
+  n % i == 0 ? console.log(i) : console.log("fuck");
+}
+console.log(typeof undefined);
