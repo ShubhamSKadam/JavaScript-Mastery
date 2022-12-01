@@ -1,4 +1,4 @@
-// Numbers
+// Numbers - Integers, Fractions
 
 const firstNumber = 12;
 const secondNumber = 27;
@@ -7,7 +7,7 @@ const result = firstNumber + secondNumber;
 
 console.log(result);
 
-// Boolean
+// Boolean - True / False
 
 const isCool = true;
 
