@@ -37,3 +37,8 @@ console.log(true && true && true);
 console.log(true || false);
 // NOT ! => Reverses the Boolean value
 console.log(!true);
+
+// Assignment Operator
+let num = 34;
+num += 2;
+console.log(num);
