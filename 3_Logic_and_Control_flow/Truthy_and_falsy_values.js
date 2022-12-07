@@ -29,3 +29,11 @@
 // 27 (any number)
 // {} // empty object is also considered to be true
 // [] // empty array is also considered to be true
+
+const stars = 5;
+
+if (stars) {
+  console.log(`Congrats,you have ${stars} stars`);
+} else {
+  console.log("You don't have any stars");
+}
