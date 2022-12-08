@@ -39,6 +39,8 @@
 // }
 
 // Ternary operator
+// Syntax ,
+// (condition) ? // true : // false
 const age = 1;
 
 age > 18 ? console.log("You may drive") : console.log("You cannot drive yet!");

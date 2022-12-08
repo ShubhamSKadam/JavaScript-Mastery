@@ -1,3 +1,18 @@
+
+// The switch statement is used to perform different actions based on different conditions
+// syntax ,
+// switch (condition){
+      // case 'xyz':
+            // block of code;
+            // break;
+
+      // case 'abc':
+            // block of code;
+            // break;
+// }
+
+
+
 const superHero = "Batman";
 
 switch (superHero) {
