@@ -16,19 +16,29 @@
 
 // A arrow function
 // const name = (params) => {
-  // statements
+// statements
 // };
 
 // function square(number) {
-  // return number * number;
+// return number * number;
 // }
 
 // FUNCTION CALL (calling / executing a function)
 // const ans = square(6);
 // console.log(ans);
 
-function sayHi(name){
-  console.log(`Hi, ${name}`);
-}
+// function sayHi(name){
+//   console.log(`Hi, ${name}`);
+// }
 
-sayHi('Shubham');
+// sayHi('Shubham');
+
+// The below function will print the sum and return undefined
+// function add(a, b) {
+// console.log(a + b);
+// }
+
+// const ans = add(3, 3);
+
+// Undefined will be printed out
+// console.log(ans);
