@@ -14,18 +14,18 @@
 
 // Local Scope
 
-// const someFunction = () => {
-//   let firstName = "John";
-//   console.log(firstName);
+const someFunction = () => {
+  let firstName = "John";
+  console.log(firstName);
 
-//   const someFunction2 = () => {
-//     console.log(firstName);
-//   };
+  const someFunction2 = () => {
+    console.log(firstName);
+  };
 
-//   someFunction2();
-// };
+  someFunction2();
+};
 
-// someFunction();
+someFunction();
 
 // Block Scope
 

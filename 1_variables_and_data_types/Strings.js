@@ -1,7 +1,6 @@
 // Strings
 // String is a dataype used to represent text
 const exampleString = "Hello, World!";
-
 console.log(exampleString);
 
 // There are 3 ways of representing a string
