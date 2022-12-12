@@ -38,3 +38,43 @@ const hoist = () => {
   console.log(message);
 };
 ```
+
+
+
+### Closure
+
+Closure gives you an outer function scope through the inner function.
+
+Below Code shows how JavaScript takes care of the scope.
+
+```js
+const outer = () => {
+  const outerVar = "Hello";
+
+  const inner = () => {
+    const innervar = "Hi";
+    console.log(outerVar, innervar);
+  };
+  return inner;
+};
+
+const innerFunc = outer();
+
+innerFunc();
+```
+
+```js
+const init = () => {
+    const hobby = "Learning JavaScript"; // Local variable created by init function
+
+    const displayHobby = () => {
+        // displayHobby is the inner function, a closer
+        console.log(hobby); // using  a variable created in the parent function
+    };
+
+    displayHobby();
+};
+
+init();
+```
+
