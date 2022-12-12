@@ -4,7 +4,8 @@
 
 ## Contents -
 
-- #### [Variables and Data Types](/1_variables_and_data_types/variablesDataTypes.md)
-- #### [Operators](/2_Operators/Operators.md)
-- #### [Logic and Control Flow](/3_Logic_and_Control_flow/LogicAndControlFlow.md)
-- #### [Functions](/4_Functions/Functions.md)
+-   #### [Variables and Data Types](/1_variables_and_data_types/variablesDataTypes.md)
+-   #### [Operators](/2_Operators/Operators.md)
+-   #### [Logic and Control Flow](/3_Logic_and_Control_flow/LogicAndControlFlow.md)
+-   #### [Functions](/4_Functions/Functions.md)
+-   #### [Hoisting and Closures](/5_Hoisting_and_Closure/HoistingAndClosure.md)
