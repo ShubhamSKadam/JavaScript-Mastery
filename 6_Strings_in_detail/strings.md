@@ -33,8 +33,6 @@ const lastLetter = firstName[firstName.length - 1];
 console.log(firstLetter, lastLetter); // Y , n
 ```
 
-
-
 #### Uppercase and Lowercase
 
 To make a string Uppercase the toUpperCase() method is being called. 
@@ -58,21 +56,21 @@ const hobbies = "I love HTML, CSS and JavaScript, JavaScript";
 
 // returns the index of first Occurrence of the word JavaScript
 const firstIndex = hobbies.indexOf("JavaScript");
-console.log(firstIndex);
+console.log(firstIndex); // 21
 
 // returns the index of last Occurrence of the word JavaScript
 const lastIndex = hobbies.lastIndexOf("JavaScript");
-console.log(lastIndex);
+console.log(lastIndex); // 33
 
 // includes() => Checks whether the word exists in the string.
 const includesCSS = hobbies.includes("CSS");
-console.log(includesCSS);
+console.log(includesCSS); // true
 
 // startsWith();
-console.log(hobbies.startsWith("I"));
+console.log(hobbies.startsWith("I")); // true
 
 // endsWith();
-console.log(hobbies.endsWith('JavaScript'));
+console.log(hobbies.endsWith('JavaScript')); // true
 
 ```
 
@@ -84,9 +82,65 @@ const exampleString = "hotdog";
 // slice() method is used to get the substring of a string
 // It takes 2 arguments i.e, the start index and the end index;
 const hot = exampleString.slice(0, 3);
-console.log(hot);
+console.log(hot); // hot
 
 const dog = exampleString.slice(3, 6);
-console.log(dog);
+console.log(dog); // dog
+```
+
+#### Split a String
+
+```js
+// Using the split() method
+
+const exampleString = "dog";
+
+const characters = exampleString.split("");
+console.log(characters); // ['d','o','g']
+
+const allAlphabets = "The quick brown fox jumps over the lazy dog.";
+
+const splitAllAlphabets = allAlphabets.split(" ");
+console.log(splitAllAlphabets); 
+// [
+//   'The',   'quick',
+//   'brown', 'fox',
+//   'jumps', 'over',
+//   'the',   'lazy',
+//   'dog.'
+// ]
+
+```
+
+#### Reverse a String
+
+The reverse method doesn't work over strings. So we split the string so that it becomes an array. 
+
+Now we call the reverse method to reverse the array and lastly join method to join the characters to make it a string again. 
+
+```js
+const exampleString = "test";
+
+const reversedString = exampleString.split("").reverse().join("");
+console.log(reversedString);
+```
+
+#### Repeat 
+
+```js
+const dog = "woof";
+console.log(dog.repeat(5)); // woofwoofwoofwoofwoof
+```
+
+#### Trim
+
+Trimming up unnecessary spaces in a string using the trim() method.  
+
+```js
+// trim() method
+const email = "  shubhamskadam963@gmail.com ";
+
+console.log(email); //   shubhamskadam963@gmail.com     
+console.log(email.trim());// shubhamskadam963@gmail.com
 ```
 
