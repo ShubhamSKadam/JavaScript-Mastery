@@ -140,7 +140,7 @@ Trimming up unnecessary spaces in a string using the trim() method.
 // trim() method
 const email = "  shubhamskadam963@gmail.com ";
 
-console.log(email); //   shubhamskadam963@gmail.com     
+console.log(email); //   shubhamskadam963@gmail.com       
 console.log(email.trim());// shubhamskadam963@gmail.com
 ```
 
