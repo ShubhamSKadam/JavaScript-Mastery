@@ -10,3 +10,4 @@
 -   #### [Functions](/4_Functions/Functions.md)
 -   #### [Hoisting and Closures](/5_Hoisting_and_Closure/HoistingAndClosure.md)
 -   #### [Strings in Detail](/6_Strings_in_detail/strings.md)
+-   #### [Arrays in Detail](/7_Arrays_in_detail/Arrays.md)
