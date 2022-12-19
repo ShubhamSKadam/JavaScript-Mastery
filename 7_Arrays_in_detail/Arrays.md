@@ -77,7 +77,37 @@ const inventory = [
 ];
 
 // Array Map
-const prices = inventory.map((item) => console.log(item.price));
-const names = inventory.map((item) => console.log(item.name));
+const prices = inventory.map((item) => console.log(item.price));// displays only the prices
+const names = inventory.map((item) => console.log(item.name)); // diplays only the names
+```
+
+#### Array Filter
+
+```js
+const numbers = [2, 5, -2, 0, -5, 1];
+
+const positiveNumbers = numbers.filter((number) => number >= 0);
+console.log(positiveNumbers);
+
+const negativeNumbers = numbers.filter((number) => number <= 0);
+console.log(negativeNumbers);
+
+// Another real life example
+const employeesData = [
+    { name: "Shubham", overtime: 5 },
+    { name: "Samarth", overtime: 7 },
+    { name: "Seema", overtime: 8 },
+];
+
+const employeesToReward = employeesData.filter(
+    (employee) => employee.overtime >= 7
+);
+
+const employeeNames = employeesToReward.map((employee) => employee.name);
+
+employeeNames.forEach((user)=>{
+      console.log(`Congratulations, ${user}`);  // Congratulations, Samarth
+												// Congratulations, Seema
+})
 ```
 
