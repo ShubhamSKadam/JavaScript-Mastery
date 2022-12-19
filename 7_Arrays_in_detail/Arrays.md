@@ -67,3 +67,17 @@ numbers.forEach((value) => (sum += value));
 console.log(sum); // 20
 ```
 
+#### Map method
+
+```js
+const inventory = [
+    { price: 7, name: "egg" },
+    { price: 10, name: "lays" },
+    { price: 12, name: "maggie" },
+];
+
+// Array Map
+const prices = inventory.map((item) => console.log(item.price));
+const names = inventory.map((item) => console.log(item.name));
+```
+
