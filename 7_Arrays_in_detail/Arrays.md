@@ -131,3 +131,18 @@ const city = cities.find((city) => city.startsWith("N"));
 console.log(city); // New Delhi
 ```
 
+#### Array Includes
+
+```js
+// Array Includes
+const movies = ["Avengers", "Superman", "Batman"];
+
+if (movies.includes("Avengers")) {
+    console.log("The movie is available on prime");// The movie is available on prime
+} else {
+    console.log("The movie is not available on prime.");
+}
+
+// Note Includes method is case sensitive
+```
+

@@ -13,3 +13,12 @@ const cities = ["Bangalore", "Mumbai", "New Delhi", "Noida", "Hyderabad"];
 const city = cities.find((city) => city.startsWith("N"));
 
 console.log(city);
+
+// Array Includes
+const movies = ["Avengers", "Superman", "Batman"];
+
+if (movies.includes("Avengers")) {
+    console.log("The movie is available on prime");
+} else {
+    console.log("The movie is not available on prime.");
+}
