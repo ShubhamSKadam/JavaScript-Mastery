@@ -146,3 +146,24 @@ if (movies.includes("Avengers")) {
 // Note Includes method is case sensitive
 ```
 
+#### Array Sort
+
+```js
+// Array sort => Alphabetically,
+// doesn't sort numbers
+// This sort method mutates the original array
+const names = ["Shubham", "Aditya", "Divyanshi", "Samarth"];
+names.sort();
+console.log(names); // [ 'Aditya', 'Divyanshi', 'Samarth', 'Shubham' ]
+
+const numbers = [4, 12, 8, 5, 1];
+
+// Ascending order
+numbers.sort((a, b) => a - b);
+console.log(numbers); // [ 1, 4, 5, 8, 12 ]
+
+// Descending order
+numbers.sort((a, b) => b - a);
+console.log(numbers); // [ 12, 8, 5, 4, 1 ]
+```
+
