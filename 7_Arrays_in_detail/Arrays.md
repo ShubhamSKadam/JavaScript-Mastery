@@ -167,3 +167,27 @@ numbers.sort((a, b) => b - a);
 console.log(numbers); // [ 12, 8, 5, 4, 1 ]
 ```
 
+#### Some and Every
+
+```js
+const array = [1, 2, 3, 4, 5];
+
+// Array Some => returns true if atleast one element passes the test
+console.log(array.some((number) => number > 5)); // false
+
+// Array Every => return true if all elements pass the test
+console.log(array.every((number) => number > 0)); // true
+```
+
+#### Array Reduce
+
+```js
+// Array Reduce
+
+const groceryList = [29, 12, 45, 35, 87, 110];
+
+const total = groceryList.reduce((total, price) => total + price, 0);
+
+console.log(total); // 318
+```
+
