@@ -1,4 +1,4 @@
-# Crash Course on JavaScript - JS Mastery
+# Crash Course on JavaScript 
 
 ![Javascript](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_6xmpk2NCVs1LezEwt8U8UWIzp4NX5AFCw&usqp=CAU)
 
