@@ -41,7 +41,7 @@ There are 3 ways of representing a string:
 We can use Single Quote or Double Quote if we just want to statically display it.
 
 ```js
-const singleQuote = "Hello";
+const singleQuote = 'Hello';
 const doubleQuote = "Hello";
 ```
 
