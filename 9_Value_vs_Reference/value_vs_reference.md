@@ -66,3 +66,32 @@ console.log(person); // { name: 'John', age: 23 }
 console.log(newPerson); // { name: 'John', age: 22 }
 ```
 
+```js
+// Deep Cloning
+// We can create a shallow copy of person object
+// but we have to do it for all the inner objects as well.
+// To solve this we can do a deep cloning where we make
+// use of JSON.stringify() method
+
+const person = {
+    name: "Shubham",
+    car: {
+        brand: "BMW",
+        color: "blue",
+        wheels: 4,
+    },
+};
+
+const newPerson = JSON.stringify(person);
+
+// newPerson will be in the form of string,
+// to convert it back to an object,
+// we use JSON.parse();
+
+const updatedPerson = JSON.parse(newPerson);
+
+updatedPerson.car.color = "red";
+console.log(person); // { name: 'Shubham', car: { brand: 'BMW', color: 'blue', wheels: 4 } }
+console.log(updatedPerson); // { name: 'Shubham', car: { brand: 'BMW', color: 'red', wheels: 4 } }
+```
+
