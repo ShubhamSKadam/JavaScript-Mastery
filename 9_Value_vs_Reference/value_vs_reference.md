@@ -29,7 +29,7 @@ const copiedNumbers = numbers;
 const newNumbers = [...numbers];
 
 numbers.push(5);
-console.log(numbers);  // [ 1, 2, 3, 4, 5 ]
+console.log(numbers); // [ 1, 2, 3, 4, 5 ]
 console.log(copiedNumbers); // [ 1, 2, 3, 4, 5 ]
 console.log(newNumbers); // [ 1, 2, 3, 4 ]
 
@@ -42,7 +42,7 @@ const copiedNumbers = numbers;
 const newNumbers = numbers.slice();
 
 numbers.push(5);
-console.log(numbers);  // [ 1, 2, 3, 4, 5 ]
+console.log(numbers); // [ 1, 2, 3, 4, 5 ]
 console.log(copiedNumbers); // [ 1, 2, 3, 4, 5 ]
 console.log(newNumbers); // [ 1, 2, 3, 4 ]
 ```
@@ -59,12 +59,14 @@ console.log(newPerson); // { name: 'John', age: 22 }
 
 // 2nd way : Object.assign()
 const person = { name: "John", age: 22 };
-const newPerson = Object.assign({},person);
+const newPerson = Object.assign({}, person);
 
 person.age = 23;
 console.log(person); // { name: 'John', age: 23 }
 console.log(newPerson); // { name: 'John', age: 22 }
 ```
+
+#### Deep Cloning
 
 ```js
 // Deep Cloning
@@ -94,4 +96,3 @@ updatedPerson.car.color = "red";
 console.log(person); // { name: 'Shubham', car: { brand: 'BMW', color: 'blue', wheels: 4 } }
 console.log(updatedPerson); // { name: 'Shubham', car: { brand: 'BMW', color: 'red', wheels: 4 } }
 ```
-
