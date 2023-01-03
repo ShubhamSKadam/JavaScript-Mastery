@@ -3,10 +3,6 @@
 #### Creating an Object
 
 ```js
-// object is an unordered collection
-// of related date in form of
-// key value pair
-
 const person = {
     firstName: "Shubham",
     lastName: "Kadam",
@@ -18,9 +14,11 @@ const person = {
 };
 ```
 
+The first block of code shows how to create a new object using object literal syntax. An object literal is a list of key-value pairs enclosed in curly braces `{}`. The keys are represented by strings, and the values can be any data type (strings, numbers, arrays, etc).
+
 #### The Dot and Square Notation
 
-```
+```js
 // Dot notation
 const person = {
     firstName: "Shubham",
@@ -40,7 +38,11 @@ const property = "age";
 console.log(person[property]); // 23
 ```
 
-#### Built-in-Methods
+The above code demonstrates two ways to access and modify the properties of an object: dot notation and square bracket notation.
+
+With dot notation, you can access or set a property of an object using a dot (`.`) followed by the property name. For example, `person.age = 23` sets the `age` property of the `person` object to 23.
+
+With square bracket notation, you can access or set a property using a string inside square brackets (`[]`). For example, `person['age'] = 23` sets the `age` property of the `person` object to 23. 
 
 ```js
 const dog = {
@@ -63,6 +65,8 @@ const car = {
 
 car.Details(); // Lambo 2019
 ```
+
+`this` notation is useful when you need to access a property whose name is stored in a variable.
 
 #### Methods 
 
@@ -136,4 +140,11 @@ newUser.age = 23; // the age property will not be added because we applied Objec
 console.log(user);// { username: 'Samarth', password: '12345' }
 
 ```
+
+The above block of code demonstrates four methods that are built into JavaScript: `Object.keys()`, `Object.values()`, `Object.entries()`, and `Object.freeze()`.
+
+- `Object.keys()` creates an array containing the keys (property names) of an object.
+- `Object.values()` creates an array containing the values of an object.
+- `Object.entries()` is a built-in JavaScript method that returns an array of an object's own enumerable string-keyed property [key, value] pairs, in the same order as that provided by a for...in loop (the difference being that a for-in loop enumerates properties in the prototype chain as well).
+- `Object.freeze()` is a method in JavaScript that prevents an object from being modified. It makes the object's properties and values read-only, and prevents new properties from being added, removed, or modified. Once an object is frozen, you can no longer change its properties or values, and you cannot add or remove properties from the object.
 
