@@ -5,10 +5,25 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>DOM</title>
+        <style>
+            .menu-item {
+                background-color: black;
+                color: white;
+            }
+
+            .menu-item.active {
+                background-color: white;
+                color: black;
+            }
+        </style>
     </head>
     <body>
-        <h1 class="heading1">Hello, World!</h1>
-        <h2 class="heading1">Test 1</h2>
+        <ul>
+            <li onclick="menuClicked(this)" class="menu-item">Menu 1</li>
+            <li onclick="menuClicked(this)" class="menu-item active">Menu 2</li>
+            <li onclick="menuClicked(this)" class="menu-item">Menu 3</li>
+            <li onclick="menuClicked(this)" class="menu-item">Menu 4</li>
+        </ul>
         <script src="script.js"></script>
     </body>
 </html>
