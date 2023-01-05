@@ -26,7 +26,20 @@ const fetchPhotoDetails = (photo) => {
     });
 };
 
-fetchUser("Shubham")
-    .then((user) => fetchUserPhotos(user.username))
-    .then((photos) => fetchPhotoDetails(photos[0]))
-    .then((details) => console.log(`Your photo details are ${details}`));
+// This was one way of calling the function
+// fetchUser("Shubham")
+//     .then((user) => fetchUserPhotos(user.username))
+//     .then((photos) => fetchPhotoDetails(photos[0]))
+//     .then((details) => console.log(`Your photo details are ${details}`));
+
+// The second way is using Async ==> Await
+
+const displayData = async () => {
+    const user = await fetchUser("Shubham");
+    const photos = await fetchUserPhotos(user.username);
+    const details = await fetchPhotoDetails(photos[0]);
+
+    console.log(details);
+};
+
+displayData();
