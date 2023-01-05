@@ -1,4 +1,4 @@
-# Crash Course on JavaScript 
+# Crash Course on JavaScript
 
 ![Javascript](https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRY_6xmpk2NCVs1LezEwt8U8UWIzp4NX5AFCw&usqp=CAU)
 
@@ -13,3 +13,4 @@
 -   #### [Arrays in Detail](/7_Arrays_in_detail/Arrays.md)
 -   #### [Objects in Detail](/8_Objects_in_detail/objects.md)
 -   #### [Value vs Reference](/9_Value_vs_Reference/value_vs_reference.md)
+-   #### [DOM](/10_DOM/dom.md)
