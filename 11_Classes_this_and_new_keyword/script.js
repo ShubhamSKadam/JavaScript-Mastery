@@ -31,7 +31,7 @@
 
 // console.log(user);
 
-// HOw can we do the same thing above using
+// How can we do the same thing above using
 // arrow function ?
 
 const createPerson = (name, age, isWorking) => ({ name, age, isWorking });
