@@ -37,3 +37,13 @@ const functionTwo = () => {
 };
 
 functionOne();
+
+// callbacks;
+
+const cart = ["Shoes", "Shirt", "Pant"];
+
+const Promise = createOrder(cart);
+
+Promise.then((orderId) => {
+    processPayment(orderId);
+});
