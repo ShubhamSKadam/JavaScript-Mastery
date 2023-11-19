@@ -6,7 +6,7 @@
 let months = ["January", "February", "March", "April"];
 
 for (let i = 0; i < months.length; i++) {
-    console.log(months[i]); 
+  console.log(months[i]);
 }
 // January
 // February
@@ -37,8 +37,8 @@ names.unshift("Samarth");
 console.log(names); // [ 'Samarth', 'Bob', 'David', 'Mark' ]
 
 // Array Splice - It adds or removes values in any position of an array
-names.splice(2, 0, "Divyanshi", "Ayushi");
-console.log(names); // [ 'Samarth', 'Bob', 'Divyanshi', 'Ayushi', 'David', 'Mark' ]
+names.splice(2, 0, "Shruti", "Rishi");
+console.log(names); // [ 'Samarth', 'Bob', 'Shruti', 'Rishi', 'David', 'Mark' ]
 
 names.splice(2, 2);
 console.log(names); // [ 'Samarth', 'Bob', 'David', 'Mark' ]
@@ -48,7 +48,7 @@ const noOneLikesSam = names.slice(1);
 console.log(noOneLikesSam); // [ 'Bob', 'David', 'Mark' ]
 ```
 
-#### forEach method 
+#### forEach method
 
 ```js
 const numbers = [2, 4, 6, 8];
@@ -71,13 +71,13 @@ console.log(sum); // 20
 
 ```js
 const inventory = [
-    { price: 7, name: "egg" },
-    { price: 10, name: "lays" },
-    { price: 12, name: "maggie" },
+  { price: 7, name: "egg" },
+  { price: 10, name: "lays" },
+  { price: 12, name: "maggie" },
 ];
 
 // Array Map
-const prices = inventory.map((item) => console.log(item.price));// displays only the prices
+const prices = inventory.map((item) => console.log(item.price)); // displays only the prices
 const names = inventory.map((item) => console.log(item.name)); // diplays only the names
 ```
 
@@ -94,21 +94,21 @@ console.log(negativeNumbers);
 
 // Another real life example
 const employeesData = [
-    { name: "Shubham", overtime: 5 },
-    { name: "Samarth", overtime: 7 },
-    { name: "Seema", overtime: 8 },
+  { name: "Shubham", overtime: 5 },
+  { name: "Samarth", overtime: 7 },
+  { name: "Seema", overtime: 8 },
 ];
 
 const employeesToReward = employeesData.filter(
-    (employee) => employee.overtime >= 7
+  (employee) => employee.overtime >= 7
 );
 
 const employeeNames = employeesToReward.map((employee) => employee.name);
 
-employeeNames.forEach((user)=>{
-      console.log(`Congratulations, ${user}`);  // Congratulations, Samarth
-												// Congratulations, Seema
-})
+employeeNames.forEach((user) => {
+  console.log(`Congratulations, ${user}`); // Congratulations, Samarth
+  // Congratulations, Seema
+});
 ```
 
 #### Array Find
@@ -138,9 +138,9 @@ console.log(city); // New Delhi
 const movies = ["Avengers", "Superman", "Batman"];
 
 if (movies.includes("Avengers")) {
-    console.log("The movie is available on prime");// The movie is available on prime
+  console.log("The movie is available on prime"); // The movie is available on prime
 } else {
-    console.log("The movie is not available on prime.");
+  console.log("The movie is not available on prime.");
 }
 
 // Note Includes method is case sensitive
@@ -152,9 +152,9 @@ if (movies.includes("Avengers")) {
 // Array sort => Alphabetically,
 // doesn't sort numbers
 // This sort method mutates the original array
-const names = ["Shubham", "Aditya", "Divyanshi", "Samarth"];
+const names = ["Shubham", "Aditya", "Shruti", "Samarth"];
 names.sort();
-console.log(names); // [ 'Aditya', 'Divyanshi', 'Samarth', 'Shubham' ]
+console.log(names); // [ 'Aditya', 'Shruti', 'Samarth', 'Shubham' ]
 
 const numbers = [4, 12, 8, 5, 1];
 
